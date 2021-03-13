@@ -5,6 +5,7 @@ exports.min = function min (array) {
     if (array[i]<min) min=array[i];
   }
   if(array.length==0) min=0;
+  if (arguments[0]==undefined) min=0;
   return min;
 }
 
@@ -14,6 +15,7 @@ exports.max = function max (array) {
     if (array[i]>max) max=array[i];
   }
   if(array.length==0) max=0;
+  if (arguments[0]==undefined) max=0;
   return max;
 }
 
@@ -25,5 +27,6 @@ exports.avg = function avg (array) {
   }
   avg=s/array.length;
   if(array.length==0) avg=0;
+  if (arguments[0]==undefined) avg=0;
   return avg;
 }
