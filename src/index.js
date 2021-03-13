@@ -1,6 +1,6 @@
 
 exports.min = function min (array) {
-  var min=0;
+  var min=array[0];
   for (let i=0; i<array.length; i++){
     if (array[i]<min) min=array[i];
   }
@@ -8,7 +8,7 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
-  var max=0;
+  var max=array[0];
   for (let i=0; i<array.length; i++){
     if (array[i]>max) max=array[i];
   }
