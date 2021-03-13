@@ -1,5 +1,3 @@
-let emptyArray = [];
-let nonExistantArray = undefined;
 
 exports.min = function min (array) {
   var min=array[0];
@@ -8,8 +6,6 @@ exports.min = function min (array) {
   }
   if(array.length==0) min=0;
   if (array===undefined) min=0;
-  if (array.isArray(emptyArray)) min=0;
-  if (array.isArray(nonExistantArray)) min=0;
   return min;
 }
 
@@ -20,8 +16,6 @@ exports.max = function max (array) {
   }
   if(array.length==0) max=0;
   if (array===undefined) max=0;
-  if (array.isArray(emptyArray)) max=0;
-  if (array.isArray(nonExistantArray)) max=0;
   return max;
 }
 
@@ -34,7 +28,5 @@ exports.avg = function avg (array) {
   avg=s/array.length;
   if(array.length==0) avg=0;
   if (array===undefined) avg=0;
-  if (array.isArray(emptyArray)) avg=0;
-  if (array.isArray(nonExistantArray)) avg=0;
   return avg;
 }
